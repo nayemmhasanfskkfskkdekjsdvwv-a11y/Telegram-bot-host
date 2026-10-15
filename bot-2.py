@@ -105,7 +105,7 @@ else:
 # ==========================================
 # Configuration (Environment Variables Recommended)
 # ==========================================
-TOKEN = os.environ.get("BOT_TOKEN", "8874912587:AAHsnI6ewXtgRsrUReQhMH15QQlKarX0wuk").strip()
+TOKEN = os.environ.get("BOT_TOKEN", "8659777806:AAFbOkCoLY3S7XY4QXd-0nR8kuGZJTMMJts").strip()
 if not TOKEN:
     raise RuntimeError(
         "BOT_TOKEN environment variable is required. "
@@ -115,7 +115,7 @@ BASE_URL = f"https://api.telegram.org/bot{TOKEN}"
 FILE_URL = f"https://api.telegram.org/file/bot{TOKEN}/"
 
 try:
-    owner_id_value = os.environ.get("OWNER_ID", "8977287422").strip()
+    owner_id_value = os.environ.get("OWNER_ID", "7525798243").strip()
     if not owner_id_value:
         raise ValueError("missing")
     OWNER_ID = int(owner_id_value)
@@ -124,7 +124,7 @@ except (TypeError, ValueError) as exc:
         "OWNER_ID is required and must be a numeric Telegram user ID. "
         "Add OWNER_ID to Replit Secrets before starting the bot."
     ) from exc
-BOT_USERNAME = "SMSWAO_OfficialBot"
+BOT_USERNAME = "A2pPremiumBazar1_bot"
 
 
 def _redact_secret(value):
